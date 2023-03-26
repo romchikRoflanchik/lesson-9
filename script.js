@@ -41,17 +41,15 @@ let MyMath = {
     PI() {
         return 3.14;
     },
-    pow() {
-        let num1 = prompt("number");
-        let num2 = prompt("degree");
+    pow(num1,num2) {
         let result = 1;
         for (i = 1; i <= num2; i++) {
             result *= num1;
         }
         return result
     },
-    abs() {
-        let num = prompt('Введіть число')
+    
+    abs(num) {
         if (num < 0) {
             return -num
         } else {
@@ -78,3 +76,5 @@ let MyMath = {
       }
 
 }
+
+console.log(MyMath.pow(5,2));
